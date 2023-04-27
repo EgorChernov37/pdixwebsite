@@ -57,7 +57,7 @@ a:not(.face-button)::before {
   height: 3px;
   border-radius: 4px;
   background-color: #fff;
-  bottom: 10%;
+  bottom: 20%;
   left: 25%;
   transform-origin: right;
   transform: scaleX(0);
