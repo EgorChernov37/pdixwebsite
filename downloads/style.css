@@ -129,7 +129,6 @@ a:not(.face-button):hover::before {
 .face-button{
   margin-bottom: 10px;
   position: relative;
-  left: 115px;
 }
 h1{
   margin-bottom: 10px;
