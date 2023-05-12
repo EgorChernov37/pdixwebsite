@@ -27,7 +27,7 @@ TABLE_HEADING = '''<tr>
     '''
 
 TABLE_DIR = '''    <tr>
-        <td class="name"><a href="{esc_name}/index.html">{name}</a></td>
+        <td class="name"><a href="{esc_name}/">{name}/</a></td>
         <td class="modified">{modified}</td>
         <td class="size">-</td>
     </tr>'''
@@ -154,7 +154,7 @@ def get_rel_dir(path, root):
     if len(path) == len(root):
         return '/'
     else:
-        return path[len(root):]
+        return path[len(root):] + "/"
 
 
 def walk_level(path, level=-1):
