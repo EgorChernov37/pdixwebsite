@@ -44,12 +44,12 @@
     color: #fff;
     padding: 30px;
   }
-a:not(.face-button, .newlink) {
+a:not(.face-button, .newlink, .home, .downloads, .documentation, .about) {
 	color: #fff;
   position: relative;
   text-decoration: none;
 }
-a:not(.face-button, .newlink)::before {
+a:not(.face-button, .newlink, .home, .downloads, .documentation, .about)::before {
   content: '';
   position: absolute;
   width: 50%;
@@ -63,7 +63,7 @@ a:not(.face-button, .newlink)::before {
   transition: transform .3s ease-in-out;
 }
 
-a:not(.face-button, .newlink):hover::before {
+a:not(.face-button, .newlink, .home, .downloads, .documentation, .about):hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -155,3 +155,94 @@ p{
   color: #fff;
 }
 
+.home{
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+.home::before{
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #fff;
+  bottom: 25%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+.home:hover::before {
+  transform-origin: left;
+  color: #fff;
+  transform: scaleX(1);
+}
+
+.downloads{
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+.downloads::before{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #fff;
+  bottom: 25%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+.downloads:hover::before {
+  transform-origin: left;
+  color: #fff;
+  transform: scaleX(1);
+}
+
+.documentation{
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+.documentation::before{
+  content: '';
+  position: absolute;
+  width: 115px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #fff;
+  bottom: 25%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+.documentation:hover::before {
+  transform-origin: left;
+  color: #fff;
+  transform: scaleX(1);
+}
+
+.about{
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+.about::before{
+  content: '';
+  position: absolute;
+  width: 45px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #fff;
+  bottom: 25%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+.about:hover::before {
+  transform-origin: left;
+  color: #fff;
+  transform: scaleX(1);
+}
