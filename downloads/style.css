@@ -95,7 +95,8 @@ a:not(.face-button, .home, .downloads, .documentation, .about):hover::before {
 .face-button {
   height: 64px;
   display: inline-block;
-  border: 3px solid #81A1C1;
+  border: 2px solid #81A1C1;
+  border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -117,7 +118,6 @@ a:not(.face-button, .home, .downloads, .documentation, .about):hover::before {
   padding: 0 32px;
   line-height: 64px;
   transition: margin 0.4s;
-  background-color: #434c5e;
   color: #81A1C1;
 }
 .face-button .face-primary {
