@@ -162,7 +162,7 @@ h3 {
   position: absolute;
   width: 45px;
   height: 3px;
-  border-radius: 6px;
+  border-radius: 4px;
   background-color: #fff;
   bottom: 25%;
   transform-origin: right;
@@ -247,4 +247,9 @@ h3 {
 .colums{
   color: #fff;
   column-count: 5;
+}
+
+.fa-brands:hover{
+  transition: 0.3s;
+  color: #5E4AE3;
 }
