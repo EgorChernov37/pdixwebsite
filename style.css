@@ -1,10 +1,10 @@
 @import url("//fonts.googleapis.com/css?family=Roboto:500");
-* {
+body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #242526;
   text-align: center;
-  background-color: #4c566a;
 }
 ul {
   padding: 0px;
@@ -44,18 +44,20 @@ a:not(.face-button, .newlink) {
 a:not(
     .face-button,
     .newlink,
-    .downloads,
+    #link-icon,
     .home,
+    .downloads,
     .documentation,
     .about
   )::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 50%;
   height: 3px;
   border-radius: 4px;
   background-color: #fff;
   bottom: 20%;
+  left: 25%;
   transform-origin: right;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
@@ -65,13 +67,8 @@ a:not(.face-button, .newlink):hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
-.cheese {
-  color: #fff;
-  list-style-type: upper-roman;
-  list-style-position: inside;
-}
 .newlink {
-  color: #88c0d0;
+  color: #5E4AE3;
   position: relative;
   text-decoration: none;
 }
@@ -81,50 +78,45 @@ a:not(.face-button, .newlink):hover::before {
   width: 100%;
   height: 3px;
   border-radius: 4px;
-  background-color: #88c0d0;
-  bottom: -20%;
+  background-color: #5E4AE3;
+  bottom: -10%;
   transform-origin: right;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
 .newlink:hover::before {
   transform-origin: left;
-  color: #88c0d0;
+  color: #5E4AE3;
   transform: scaleX(1);
 }
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 25px; /* Height of the footer */
+  height: 35px; /* Height of the footer */
+  padding-top: 15px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
-}
-hr {
-  width: 50%;
-  margin: auto;
-  background-color: #51566b;
-  border-top: 1px solid #51566b;
-  color: #5f657c;
+  background-color: #1b1b1d;
 }
 .teaxt {
   color: #fff;
   font-size: 15px;
-  text-align: center;
   margin-top: 2px;
 }
 
 .face-button {
   height: 64px;
   display: inline-block;
-  border: 3px solid #81a1c1;
+  border: 2px solid #5E4AE3;
+  border-radius: 6px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
-  color: #81a1c1;
+  color: #5E4AE3;
   overflow: hidden;
 }
 .face-button .icon {
@@ -135,21 +127,27 @@ hr {
   display: block;
   padding: 0 32px;
   line-height: 64px;
-  transition: margin 0.4s;
-  background-color: #434c5e;
 }
 .face-button .face-primary {
-  background-color: #81a1c1;
-  color: #81a1c1;
+  color: #5E4AE3;
 }
-.face-button:hover .face-primary {
+.face-button:hover > .face-primary {
+  background-color: #5E4AE3;
+  color: #000;
+  transition: 0.4s;
+}
+/* .face-button:hover .face-primary {
   margin-top: -64px;
-}
+} */
 h1 {
   color: #fff;
   margin-bottom: 15px;
 }
 h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+h3 {
   color: #fff;
   margin-bottom: 20px;
 }
@@ -244,4 +242,9 @@ h2 {
   transform-origin: left;
   color: #fff;
   transform: scaleX(1);
+}
+
+.colums{
+  color: #fff;
+  column-count: 5;
 }

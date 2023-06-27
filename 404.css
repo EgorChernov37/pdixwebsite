@@ -1,10 +1,9 @@
 @import url("//fonts.googleapis.com/css?family=Roboto:500");
-
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #4c566a;
+  background-color: #242526;
   text-align: center;
 }
 ul {
@@ -37,7 +36,7 @@ ul li a {
   color: #fff;
   padding: 30px;
 }
-a:not(.face-button, .newlink, .home, .downloads, .documentation, .about) {
+a:not(.face-button, .newlink) {
   color: #fff;
   position: relative;
   text-decoration: none;
@@ -45,6 +44,7 @@ a:not(.face-button, .newlink, .home, .downloads, .documentation, .about) {
 a:not(
     .face-button,
     .newlink,
+    #link-icon,
     .home,
     .downloads,
     .documentation,
@@ -63,60 +63,42 @@ a:not(
   transition: transform 0.3s ease-in-out;
 }
 
-a:not(
-    .face-button,
-    .newlink,
-    .home,
-    .downloads,
-    .documentation,
-    .about
-  ):hover::before {
+a:not(.face-button, .newlink):hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
-.cheese {
-  color: #fff;
-  list-style-type: upper-roman;
-  list-style-position: inside;
-}
 .newlink {
-  color: #88c0d0;
+  color: #5E4AE3;
   position: relative;
   text-decoration: none;
 }
 .newlink::before {
   content: "";
   position: absolute;
-  width: 75%;
+  width: 100%;
   height: 3px;
   border-radius: 4px;
-  background-color: #88c0d0;
-  bottom: -40%;
-  left: 15%;
+  background-color: #5E4AE3;
+  bottom: -10%;
   transform-origin: right;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
 .newlink:hover::before {
   transform-origin: left;
-  color: #88c0d0;
+  color: #5E4AE3;
   transform: scaleX(1);
 }
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 25px; /* Height of the footer */
+  height: 35px; /* Height of the footer */
+  padding-top: 15px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
-}
-hr {
-  width: 50%;
-  margin: auto;
-  background-color: #51566b;
-  border-top: 1px solid #51566b;
-  color: #5f657c;
+  background-color: #1b1b1d;
 }
 .teaxt {
   color: #fff;
@@ -127,15 +109,18 @@ hr {
 .face-button {
   height: 64px;
   display: inline-block;
-  border: 2px solid #81a1c1;
-  border-radius: 4px;
+  border: 2px solid #5E4AE3;
+  border-radius: 6px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
-  color: #81a1c1;
+  color: #5E4AE3;
   overflow: hidden;
+}
+.face-button .icon {
+  margin-right: 6px;
 }
 .face-button .face-primary,
 .face-button .face-secondary {
@@ -144,12 +129,16 @@ hr {
   line-height: 64px;
 }
 .face-button .face-primary {
-  color: #fff;
+  color: #5E4AE3;
 }
 .face-button:hover > .face-primary {
-  background-color: #81a1c1;
+  background-color: #5E4AE3;
+  color: #000;
   transition: 0.4s;
 }
+/* .face-button:hover .face-primary {
+  margin-top: -64px;
+} */
 h1 {
   color: #fff;
   margin-bottom: 15px;
@@ -158,8 +147,9 @@ h2 {
   color: #fff;
   margin-bottom: 20px;
 }
-p {
+h3 {
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .home {
@@ -252,4 +242,9 @@ p {
   transform-origin: left;
   color: #fff;
   transform: scaleX(1);
+}
+
+.colums{
+  color: #fff;
+  column-count: 5;
 }
