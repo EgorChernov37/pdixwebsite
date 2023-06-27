@@ -68,7 +68,7 @@ a:not(.face-button, .newlink):hover::before {
   transform: scaleX(1);
 }
 .newlink {
-  color: #5E4AE3;
+  color: #c81d25;
   position: relative;
   text-decoration: none;
 }
@@ -77,8 +77,8 @@ a:not(.face-button, .newlink):hover::before {
   position: absolute;
   width: 65%;
   height: 3px;
-  border-radius: 4px;
-  background-color: #5E4AE3;
+  border-radius: 6px;
+  background-color: #c81d25;
   bottom: -10%;
   transform-origin: right;
   transform: scaleX(0);
@@ -86,7 +86,7 @@ a:not(.face-button, .newlink):hover::before {
 }
 .newlink:hover::before {
   transform-origin: left;
-  color: #5E4AE3;
+  color: #c81d25;
   transform: scaleX(1);
 }
 #footer {
@@ -109,7 +109,7 @@ a:not(.face-button, .newlink):hover::before {
 .face-button {
   height: 64px;
   display: inline-block;
-  border: 2px solid #5E4AE3;
+  border: 2px solid #c81d25;
   border-radius: 6px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -129,10 +129,10 @@ a:not(.face-button, .newlink):hover::before {
   line-height: 64px;
 }
 .face-button .face-primary {
-  color: #5E4AE3;
+  color: #c81d25;
 }
 .face-button:hover > .face-primary {
-  background-color: #5E4AE3;
+  background-color: #c81d25;
   color: #000;
   transition: 0.4s;
 }
@@ -244,4 +244,9 @@ h2 {
 .colums{
   color: #fff;
   column-count: 5;
+}
+
+.fa-brands:hover{
+  transition: 0.3s;
+  color: #c81d25;
 }
