@@ -44,6 +44,7 @@ a:not(.face-button, .newlink) {
 a:not(
     .face-button,
     .newlink,
+    .newerlink,
     #link-icon,
     .home,
     .downloads,
@@ -75,7 +76,7 @@ a:not(.face-button, .newlink):hover::before {
 .newlink::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 85%;
   height: 3px;
   border-radius: 4px;
   background-color: #5E4AE3;
@@ -89,6 +90,31 @@ a:not(.face-button, .newlink):hover::before {
   color: #5E4AE3;
   transform: scaleX(1);
 }
+
+.newerlink {
+  color: #5E4AE3;
+  position: relative;
+  text-decoration: none;
+}
+.newerlink::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #5E4AE3;
+  bottom: -10%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.newerlink:hover::before {
+  transform-origin: left;
+  color: #5E4AE3;
+  transform: scaleX(1);
+}
+
+
 #footer {
   position: absolute;
   bottom: 0;
